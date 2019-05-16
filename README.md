@@ -41,7 +41,7 @@ In addition to the definition of the geometry of the piece, it will also have an
 
 ## The expected response
 
-The response will have an ordered array of 'drops' defining how pieces are to be dropped into the defined Teris grid h x w. Each drop will be of the form '{"index":i,"rotate_ccw":r,"drop":c}'. The index i uniquely selects which piece is being dropped. Rotate_ccw is a value of 0 to 3 stating how many counter-clockwise rotations of the piece should be applied prior to dropping it. And, finally, the drop column c is a value of -2 to w + 1 giving the relative column in which to drop the center of the piece's 5 x 5 grid. Just so the response avoids needing context for processing, it will also contain the developer's system (screen) name, the solver name, and the set id sent in the request.
+The response will have an ordered array of 'drops' defining how pieces are to be dropped into the defined Tetris grid h x w. Each drop will be of the form '{"index":i,"rotate_ccw":r,"drop":c}'. The index i uniquely selects which piece is being dropped. Rotate_ccw is a value of 0 to 3 stating how many counter-clockwise rotations of the piece should be applied prior to dropping it. And, finally, the drop column c is a value of -2 to w + 1 giving the relative column in which to drop the center of the piece's 5 x 5 grid. Just so the response avoids needing context for processing, it will also contain the developer's system (screen) name, the solver name, and the set id sent in the request.
 
 As long as the drops do not cause an error, the accumulated value the pieces dropped in the Tetris grid will be computed and ranked. This potentially leads to the game master system calling the final endpoint.
 
