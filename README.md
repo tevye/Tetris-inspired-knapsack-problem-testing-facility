@@ -35,5 +35,4 @@ By designating each cell in the grid to correspond to a binary place value as...
 ![An example Tetris piece](https://github.com/tevye/Tetris-inspired-knapsack-problem-testing-facility/blob/master/tetrisBitMap.png)
 
 The above piece in hexadecimal is...
-
-1 0100 1110 0001 0000 1110 0100 --> **0x14E10E4**
+0 0100 1110 0001 0000 1110 0101 --> **0x4E10E5**
