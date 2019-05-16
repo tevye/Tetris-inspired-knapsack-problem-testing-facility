@@ -26,8 +26,14 @@ The solution passes back one the names of the solvers as 'solver_name', an ident
 
 ## A piece
 
-A piece will fit in a 5 x 5 grid.
+A piece will fit in a 5 x 5 grid. An example is...
 
 ![An example Tetris piece](https://github.com/tevye/Tetris-inspired-knapsack-problem-testing-facility/blob/master/tetrisExamplePiece.png)
 
-1 0100 1110 0001 0000 1110 0100 --> 0x14E10E4
+By designating each cell in the grid to correspond to a binary place value as...
+
+![An example Tetris piece](https://github.com/tevye/Tetris-inspired-knapsack-problem-testing-facility/blob/master/tetrisBitMap.png)
+
+The above piece in hexadecimal is...
+
+1 0100 1110 0001 0000 1110 0100 --> **0x14E10E4**
