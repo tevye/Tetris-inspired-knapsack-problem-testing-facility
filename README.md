@@ -25,3 +25,9 @@ GET /solution/{solver_name}/set/{id}/height/{h}/width/{w}/{pieces}
 The solution passes back one the names of the solvers as 'solver_name', an identifier 'id' of given problem set, the height 'h' of the Tetris container, the width 'w' of the Tetris container, and a JSON array of 'pieces'.
 
 ## A piece
+
+A piece will fit in a 5 x 5 grid.
+
+![An example Tetris piece](https://github.com/tevye/Tetris-inspired-knapsack-problem-testing-facility/blob/master/tetrisExamplePiece.png)
+
+1 0100 1110 0001 0000 1110 0100 --> 0x14E10E4
