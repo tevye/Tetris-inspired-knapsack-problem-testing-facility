@@ -22,7 +22,7 @@ The 'solvers' endpoint will return a list of names of the different solvers that
 
 GET /solution/{solver_name}/set/{id}/height/{h}/width/{w}/{pieces}
 
-The solution passes back one the names of the solvers as 'solver_name', an identifier 'id' of given problem set, the height 'h' of the Tetris container, the width 'w' of the Tetris container, and a JSON array of 'pieces'.
+The solution passes back one the names of the solvers as 'solver_name', an identifier 'id' of given problem set, the height 'h' of the Tetris container, the width 'w' of the Tetris container, and a JSON array of 'pieces'. We'll define the piece before describing the response the game server expects back from calling this endpoint.
 
 ## A piece
 
@@ -34,5 +34,13 @@ By designating each cell in the grid to correspond to a binary place value as...
 
 ![An example Tetris piece](https://github.com/tevye/Tetris-inspired-knapsack-problem-testing-facility/blob/master/tetrisBitMap.png)
 
-The above piece in hexadecimal is...
+The definition of the above piece in hexadecimal is...
 0 0100 1110 0001 0000 1110 0101 --> **0x4E10E5**
+
+In addition to the definition of the geometry of the piece, it will also have an index and an assigned floating-point value.
+
+## The expected response
+
+The response will have an ordered array of 'drops' defining how pieces are to be dropped into the defined Teris grid h x w. Each drop will be of the form '{"index":i,"rotate_ccw":r,"drop":c}'. The index i uniquely selects which piece is being dropped. Rotate_ccw is a value of 0 to 3 stating how many counter-clockwise rotations of the piece should be applied prior to dropping it. And, finally, the drop column c is a value of -2 to w + 1 giving the relative column in which to drop the center of the piece's 5 x 5 grid.
+
+
