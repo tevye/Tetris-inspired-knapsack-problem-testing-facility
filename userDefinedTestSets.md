@@ -3,7 +3,7 @@
 A user-defined test set consists of the following:
 
 - The height and width of the container
-- A set of test pieces (values and grid pattern)
+- A set of test pieces (indexed values and grid pattern)
 - a drop pattern that places a subset of the given pieces in the container
 - The optimal solution value
 
