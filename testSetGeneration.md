@@ -3,7 +3,7 @@
 There should be two ways to generate test sets:
 
 - Automatic and random
-- User-specified
+- [User-specified](./userDefinedTestSets.md)
 
 ## Automatic and random test set generation
 
