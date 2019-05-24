@@ -9,7 +9,7 @@ A user-defined test set consists of the following:
 
 ![User-defined test set](https://github.com/tevye/Tetris-inspired-knapsack-problem-testing-facility/blob/master/userDefinedxcf.png)
 
-The above image shows a trivial test set with a 5 x 5 container and an optimal value of 42. It's a useful training set because the optimal solution is only achieved by foregoing selection of the highest-value piece and applying some rotations of the pieces.
+The above image shows a trivial test set with a 5 x 5 container and an optimal value of [42](https://www.youtube.com/watch?v=aboZctrHfK8). It's a useful training set because the optimal solution is only achieved by foregoing selection of the highest-value piece and applying some rotations of the pieces.
 
 {TO BE ADDED - EXAMPLE OF THE USER TEST SET DEFINITION PER OpenAPI}
 
