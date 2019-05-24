@@ -49,5 +49,5 @@ GET /meta/{solver_name}
 
 If (and only if) the solution scores well, the game master server will call this method to get documentation about the named solver. (Details to be given later).
 
-
+[Next - test set generation](./testSetGeneration.md)
 
