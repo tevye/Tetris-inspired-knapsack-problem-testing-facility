@@ -21,3 +21,5 @@ Here are the process steps:
 6. Once the grid center is over column w + 1 and has repeated step 4, then move the grid down one row and back so its center is over column w - 2 as long as the center of the grid above and to the left of w+1, h+1. Go back to step 4.
 7. Randomly add pieces to the test set where the value of the new pieces are guaranteed to be less that the minimum of any pieces they may displace.
 8. Randomly apply 0-3 rotations of pieces before including them in the test set.
+
+[Next - user-defined test sets](./userDefinedTestSets.md)
