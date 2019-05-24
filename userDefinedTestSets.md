@@ -6,4 +6,4 @@ A user-defined test set consists of the following:
 - A set of test pieces (values and grid pattern)
 - The optimal solution value
 
-ADD PICTURE
+![User-defined test set](https://github.com/tevye/Tetris-inspired-knapsack-problem-testing-facility/blob/master/userDefinedxcf.png)
